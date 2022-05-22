@@ -13,6 +13,7 @@ exports.getHero = (res) => {
         res.json({status: 200 ,  payload: result})
         // res.render(hero)
         res.send(hero)
+        
         res.end()
     })
 }
