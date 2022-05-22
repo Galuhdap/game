@@ -1,0 +1,122 @@
+.contener img {
+    width: 1060px;
+    margin-left: 100px;
+    border-radius: 30px;
+}
+
+.depan {
+    width: 1060px;
+    height: 700px;
+    background-color: black;
+    opacity: 0.8;
+    backdrop-filter: blur(5px);
+    margin-top: -709px;
+    margin-left: 100px;
+    border-radius: 30px;
+}
+
+h1 {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: -600px;
+    margin-left: 30%;
+    z-index: 3;
+
+}
+
+.tabel {
+    position: absolute;
+    margin-right: 65px;
+}
+
+.tabel table {
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    top: -500px;
+    left: 220px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+.tabel tr td {
+    line-height: 100px;
+}
+
+.seting a {
+    text-decoration: none;
+    width: 55px;
+    height: 20px;
+    text-align: center;
+    border: 3px solid rgb(150, 206, 66);
+    border-radius: 20px;
+    position: absolute;
+    top: -438px;
+    left: 893px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.seting a:hover {
+    background-color: rgb(150, 206, 66);
+    color: black;
+}
+
+
+
+input[type=submit] {
+    color: #FFFFFF;
+    width: 60px;
+    height: 27px;
+    text-align: center;
+    border: 3px solid red;
+    background:none;
+    border-radius: 20px;
+    position: absolute;
+    top: -438px;
+    left: 959px;
+    transition: 1s;
+}
+
+input[type=submit]:hover{
+    background-color: red;
+    color: yellow;
+}
+
+
+.input {
+    position: absolute;
+    left: 340px;
+    top: 490px;
+    width: 630px;
+    height: 160px;
+}
+
+.input h1 {
+    margin-top: 0px;
+    margin-left: 52px;
+}
+
+.input input[type=text] {
+    margin-top: 100px;
+    margin-left: 18px;
+    margin-right: 6px;
+    border-radius: 10px;
+}
+
+.input input[type=submit] {
+    margin-top: 524px;
+    margin-left: -380px;
+    background: none;
+    color: rgb(42, 214, 42);
+    font-size: 30px;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    border: none;
+}
