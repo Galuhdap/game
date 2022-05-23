@@ -14,7 +14,7 @@ exports.getHero = (res) => {
         // res.json({status: 200 ,  payload: result})
         // res.render(hero)
         // res.send(hero)
-        res.render('../view/html/test', { hero })
+        res.render('../view/html/index', { hero })
         res.end()
     })
 }
@@ -31,7 +31,7 @@ exports.getHeroById = (id , res) => {
         }
         console.log(heroId)
         res.json({status: 200 ,  payload: result})
-        res.send(heroId)
+        res.render('../view/html/updeat', { heroId })
     })
 }
 
