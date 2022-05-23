@@ -14,10 +14,11 @@
     </div>
     
     <h1>
-        MOBILEGEN BANG BANG
+        <%= title%>
     </h1>
     <div class="tabel">
         <table>
+        <thead>
             <tr>
                 <th>ID</th>
                 <th>HERO</th>
@@ -25,21 +26,22 @@
                 <th>SEKIL</th>
                 <th>SETING</th>
             </tr>
-            
+        </thead>
+        <tbody>
+            <%
+					no = 0;
+					for(var i=0;i<hero.data.length;i++){
+					no++;
+			%>
             <tr>
-                <td>
-                    <%= id />
-                </td>
-                <td>
-                    <%= Hero />
-                </td>
-                <td>
-                    <%= role />
-                </td>
-                <td>
-                    <%= sekil />
-                </td>
+                <td class="1"><%=hero.data[i].no%></td>
+                <td class="2"><%=hero.data[i].nama%></td>
+                <td class="3"><%=hero.data[i].alamat%></td>
+                
+                
             </tr>
+            <%}%>
+        </tbody>
         </table>
 
         <div class="seting">

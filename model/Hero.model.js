@@ -7,13 +7,14 @@ exports.getHero = (res) => {
     db.query(sql , (error, result) => {
         if(error) return console.log("error : ", error)
         const hero = {
+            title: "MOBILEGEN BANG BANG",
             data : JSON.parse(JSON.stringify(result))
         }
-        console.log(hero)
-        res.json({status: 200 ,  payload: result})
+        // console.log(hero)
+        // res.json({status: 200 ,  payload: result})
         // res.render(hero)
-        res.send(hero)
-        res.render()
+        // res.send(hero)
+        res.render('../view/html/test', { hero })
         res.end()
     })
 }

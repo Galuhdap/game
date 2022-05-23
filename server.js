@@ -11,8 +11,8 @@ server.use(bodyparser.json())
 server.use(express.json())
 
 server.use(bodyparser.urlencoded({extended: false}))
-server.set("view engine", "ejs")
-server.set("views", "view")
+server.engine('html', require('ejs').renderFile);
+server.set('view engine', 'html');
 
 server.use("/hero", userController)
 
